@@ -16,7 +16,7 @@ class IrHttp(models.AbstractModel):
     _inherit = "ir.http"
 
     @classmethod
-    def _dispatch(cls, endpoint):
+    def _pre_dispatch(cls, rule, args):
         # This is a hack to fix real ip detection when multiple hops are added in XFF header (eg. Traefik)
         if "X-Forwarded-For" in request.httprequest.headers:
             real_ip = request.httprequest.headers["X-Forwarded-For"].split(',')[0]
@@ -26,4 +26,4 @@ class IrHttp(models.AbstractModel):
                 "X-Forwarded-For header found, setting REMOTE_ADDR and HTTP_X_FORWARDED_FOR to %s",
                 real_ip,
             )
-        return super()._dispatch(endpoint)
+        return super()._pre_dispatch(rule, args)

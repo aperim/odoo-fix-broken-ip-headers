@@ -7,6 +7,10 @@ Odoo's support for proxying and/or load balancing is broken, this add-on is a te
 
 Odoo is incorrectly configured to handle an instance behind a load balancer or proxy. This Odoo addon looks for the presence of a `X-Forwarded-For` header and sets both the `HTTP_X_FORWARDED_FOR` and `REMOTE_ADDR` environ variables to allow Odoo to correctly parse and store the users real remote IP address.
 
+## Odoo 16 Only
+
+Because of changes in how Odoo handles request - this module supports Version 16 only.
+
 ## Getting Started
 
 ### DANGER
