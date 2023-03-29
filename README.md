@@ -58,6 +58,7 @@ Create an issue with logs.
 ## Authors
 
 [@troykelly](https://github.com/troykelly) - Odoo addon for installation with instructions
+
 [@andreabak](https://github.com/andreabak) - Initial code sample for addon
 
 ## Version History
