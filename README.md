@@ -30,6 +30,7 @@ In a nutshell, **the installation of this addon, in an incorrectly configured en
 	* Remove "App" from the search bar, and search for "fix"
 	* <img width="567" alt="search_for_fix" src="https://user-images.githubusercontent.com/4564803/228408528-b51b980a-c088-4100-921c-ffb745622408.png">
 	* Activate the fix-ip addon
+        * <img width="1018" alt="fix-ip_activate" src="https://user-images.githubusercontent.com/4564803/228416409-823a773c-ee0f-444c-bf6d-e545e2717610.png">
 
 ### Addon File Installation Example
 
