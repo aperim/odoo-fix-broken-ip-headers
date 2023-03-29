@@ -34,10 +34,20 @@ In a nutshell, **the installation of this addon, in an incorrectly configured en
 ### Addon File Installation Example
 
 ```bash
-cd /mnt/addons
+cd /mnt/extra-addons
 curl -L https://github.com/aperim/odoo-fix-broken-ip-headers/archive/refs/heads/main.zip -o fix-ip.zip
 unzip -d fix-ip fix-ip.zip && f=(fix-ip/*) && mv fix-ip/*/* fix-ip && rm -Rf "${f[@]}"
 rm fix-ip.zip
+```
+
+or
+
+```bash
+cd /mnt/extra-addons
+mkdir fix-ip
+curl -L https://github.com/aperim/odoo-fix-broken-ip-headers/tarball/master -o fix-ip.tgz
+tar zxvf fix-ip.tgz --directory fix-ip --strip-components=1
+rm -Rf fix-ip.tgz
 ```
 
 ## Help
